@@ -1,0 +1,8 @@
+.menu li{
+    border-bottom: 0.01px solid #7a787a;
+    padding-bottom: 0.4rem;
+}
+
+.menu li:hover{
+    color: green;
+}
