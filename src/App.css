@@ -1,8 +1,98 @@
-.menu li{
+#root{
+    background-color: white;
+}
+.menu li {
     border-bottom: 0.01px solid #7a787a;
     padding-bottom: 0.4rem;
 }
 
-.menu li:hover{
+.menu li:hover {
     color: green;
 }
+
+/* Scroller */
+/* src/styles/customScrollbar.css */
+::-webkit-scrollbar {
+    height: 4px;
+    width: 12px;
+    background: rgb(5, 5, 5);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #0f0f0f;
+    border-radius: 10px;
+    height: 12px;
+}
+
+/* animation */
+@keyframes growshrink {
+
+    25%,
+    75% {
+        scale: 100%;
+    }
+
+    50% {
+        scale: 200%;
+        color: magenta;
+    }
+}
+
+.hero-text {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+.hero-text span {
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: growshrink;
+}
+
+@keyframes slidein {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
+@keyframes growshrink {
+
+    25%,
+    75% {
+        scale: 100%;
+    }
+
+    50% {
+        scale: 200%;
+        color: magenta;
+    }
+}
+
+/* Image animation */
+
+/* Base styles for the image */
+/* Base styles for the image */
+.image-container {
+    overflow: hidden;
+    /* Ensures the image doesn't overflow its container */
+    display: inline-block;
+    /* Ensures the container fits the image size */
+}
+
+.image-container img {
+    transition: transform 0.3s ease;
+    /* Smooth transition for the zoom effect */
+}
+
+/* Zoom in effect on hover */
+.image-container:hover img {
+    transform: scale(1.2);
+    /* Scale up the image to 120% of its original size */
+}
+
