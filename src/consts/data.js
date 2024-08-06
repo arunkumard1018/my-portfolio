@@ -105,12 +105,12 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
     {
-        title: "Blogster",
+        title: "Channel",
         image: blogster,
         github: "https://github.com/arunkumard1018/BloggingFullstackWebApp/tree/main",
         link: "https://codeup-three.vercel.app/",
         description:
-            "Blogster is a fully functional Blogging platform enabling users to create, consume, and Create  content, built using the Java stack (ReactJS, JavaScript, Tailwind CSS, java and SpringBoot). " +
+            "Chennel is a fully functional Blogging platform enabling users to create, consume, and Create  content, built using the Java stack (ReactJS, JavaScript, Tailwind CSS, java and SpringBoot). " +
             "Advanced User Management: Implemented secure and scalable user authentication and authorization mechanisms using JWT. " +
             "Dynamic Content Management: Developed comprehensive tools for seamless Content creation, updating, deletion, and rating, enhancing user engagement and content quality. " +
             "Robust Media Management: Leveraged Cloudinary for optimized cloud-based media handling, supporting high-quality  images, and documents to enrich the Reading experience.",
